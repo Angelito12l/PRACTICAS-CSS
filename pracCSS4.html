@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de personas</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: rgb(245, 209, 212);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: rgb(226, 46, 172);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro de personas</h1>
+    <form>
+        <label for="nombre">Nombre de la persona:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="tipo de color">Tipo de color:</label>
+        <select id="color" name="color">
+            <option value="primarios">Primarios</option>
+            <option value="secundarios">Secundarios</option>
+        </select>
+
+        <input type="checkbox" id="vacunado" name="vacunado">
+        <label for="vacunado">¿Has ocupado alguna vez este tipo de colores?</label><br><br>
+
+        <label>¿Que es lo que mas te interesa hacerca de estos colores?:</label><br>
+        <input type="radio" id="gusto" name="sexo" value="gusto">
+
+        <label for="gusto">Me gusta ya que aprendo a como generar o tener mas colores al mezclarlos</label><br>
+        <input type="radio" id="atencion" name="atencion" value="atencion">
+        <label for="hembra">me llama la atencion la clasificacion que tienen</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
